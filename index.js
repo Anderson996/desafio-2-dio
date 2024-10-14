@@ -1,10 +1,10 @@
-//total de vitórias e derrotas
+//Total de vitórias e derrotas
 let totalWin = winningCounter(80 , 5)
 
-//ranques possíveis
+//Ranques possíveis
 let rank = ["ferro" , "bronze" , "prata" , "ouro" , "diamante" , "lendário" , "imortal"]
 
-//função de contabilização de vitórias e derrotas (vai ficar aqui!!)
+//Função de contabilização de vitórias e derrotas (vai ficar aqui!!)
 function winningCounter(win , loss){
     let average = win - loss
     return average
@@ -33,4 +33,5 @@ else if(totalWin > 100){
     rank = rank[6]
 }
 
+//Saída
 console.log(`O herói tem saldo de ${totalWin} partidas e está no nível ${rank}`)
